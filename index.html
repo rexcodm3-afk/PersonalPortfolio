@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brice Munji — Software Engineer, Frontend Developer, and AI & Product Builder based in Douala, Cameroon. Building modern, user-focused digital platforms." />
+  <meta name="author" content="Brice Munji" />
+  <meta property="og:title" content="Brice Munji — Software Engineer & AI Product Builder" />
+  <meta property="og:description" content="Frontend Developer and AI & Product Builder crafting elegant, scalable web applications." />
+  <meta property="og:type" content="website" />
+  <title>Brice Munji — Software Engineer &amp; AI Product Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Space Grotesk, sans-serif' font-size='56' font-weight='700' fill='%23e11d2a' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__brand-mark">B</span>
+        <span class="nav__brand-text">Brice<span class="accent">.</span></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#community" class="nav__link">Community</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal"><span class="dot"></span> Available for new projects &amp; collaborations</p>
+        <h1 class="hero__title reveal">
+          Brice Munji
+        </h1>
+        <p class="hero__roles reveal">
+          <span>Software Engineer</span>
+          <span class="sep">/</span>
+          <span>Frontend Developer</span>
+          <span class="sep">/</span>
+          <span>AI &amp; Product Builder</span>
+        </p>
+        <p class="hero__summary reveal">
+          I turn ideas into practical, user-focused products — from educational management systems
+          to intelligent, AI-powered financial tools. Passionate about clean interfaces,
+          scalable architecture, and building things that matter.
+        </p>
+        <div class="hero__meta reveal">
+          <span class="hero__location">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Douala, Cameroon
+          </span>
+        </div>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              Passionate and self-driven Software Engineer with strong interests in frontend
+              development, UI/UX design, scalable web applications, and AI-powered products.
+            </p>
+            <p>
+              I'm experienced in building modern digital platforms ranging from educational
+              management systems to intelligent financial analysis tools. I enjoy turning ideas
+              into practical, user-focused solutions and continuously learning new technologies
+              to improve my craft.
+            </p>
+            <p class="about__objective">
+              <strong>Career Objective —</strong> To grow into a world-class software engineer and
+              product creator, building impactful digital platforms that solve real problems and
+              contribute to technological advancement in Africa and beyond.
+            </p>
+          </div>
+          <aside class="about__side reveal">
+            <div class="stat-card">
+              <span class="stat-card__num">4+</span>
+              <span class="stat-card__label">Full-stack platforms built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">AI</span>
+              <span class="stat-card__label">Product integration &amp; delivery</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">∞</span>
+              <span class="stat-card__label">Curiosity &amp; continuous learning</span>
+            </div>
+            <div class="about__interests">
+              <h3>Interests</h3>
+              <div class="chips">
+                <span class="chip">Frontend Development</span>
+                <span class="chip">Artificial Intelligence</span>
+                <span class="chip">Product Design</span>
+                <span class="chip">Gaming</span>
+                <span class="chip">Basketball</span>
+                <span class="chip">Music</span>
+                <span class="chip">Fitness</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Skills &amp; Toolkit</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> Frontend</h3>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Next.js</span>
+              <span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> Backend</h3>
+            <div class="chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> Database</h3>
+            <div class="chips">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">SQLite</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> Tools &amp; Technologies</h3>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Prisma</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+          <div class="skill-group reveal skill-group--wide">
+            <h3 class="skill-group__title"><span class="accent">/</span> Other</h3>
+            <div class="chips">
+              <span class="chip">UI/UX Design</span>
+              <span class="chip">Authentication Systems</span>
+              <span class="chip">Role-Based Access Control</span>
+              <span class="chip">AI Product Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Selected Projects</h2>
+        </div>
+        <div class="projects">
+          <!-- 1 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">01</span>
+              <span class="project__tag">AI · FinTech</span>
+            </div>
+            <h3 class="project__title">4RexVision</h3>
+            <p class="project__desc">
+              An AI-powered forex chart analysis platform that analyzes trading screenshots,
+              provides market insights, supports trading journals, and integrates financial news
+              into one intelligent workspace.
+            </p>
+            <ul class="project__stack">
+              <li>AI Analysis</li><li>Market Insights</li><li>Trading Journal</li><li>News Feed</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+          <!-- 2 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">02</span>
+              <span class="project__tag">Networking · Careers</span>
+            </div>
+            <h3 class="project__title">Campus2Career Cameroon</h3>
+            <p class="project__desc">
+              A professional networking and career platform connecting students with companies and
+              opportunities across Cameroon — bridging the gap between education and employment.
+            </p>
+            <ul class="project__stack">
+              <li>Networking</li><li>Opportunities</li><li>Profiles</li><li>Matching</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+          <!-- 3 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">03</span>
+              <span class="project__tag">Full-stack · EdTech</span>
+            </div>
+            <h3 class="project__title">University Management System</h3>
+            <p class="project__desc">
+              A full-stack academic management platform with role-based access for administrators,
+              teachers, parents, and students — streamlining the entire university workflow.
+            </p>
+            <ul class="project__stack">
+              <li>RBAC</li><li>Admin Panel</li><li>Records</li><li>Dashboards</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+          <!-- 4 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">04</span>
+              <span class="project__tag">Full-stack · EdTech</span>
+            </div>
+            <h3 class="project__title">Primary School Management System</h3>
+            <p class="project__desc">
+              A school administration system handling student registration, grading, attendance,
+              rankings, and automated report card generation — built for everyday school operations.
+            </p>
+            <ul class="project__stack">
+              <li>Registration</li><li>Grading</li><li>Attendance</li><li>Report Cards</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="section section--alt" id="community">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Leadership &amp; Community</h2>
+        </div>
+        <div class="community reveal">
+          <div class="community__badge">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="community__body">
+            <h3>Active contributor at <span class="accent">CodingHQ</span></h3>
+            <p>
+              I participate in collaborative technology projects, developer programs, and
+              community-driven initiatives — sharing knowledge, building together, and growing
+              alongside a community of passionate builders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">05</span>
+          <h2 class="section__title">Education</h2>
+        </div>
+        <div class="education reveal">
+          <div class="education__line" aria-hidden="true"></div>
+          <div class="education__item">
+            <span class="education__dot"></span>
+            <div class="education__content">
+              <h3>Bachelor's Degree in Technology (B.Tech)</h3>
+              <p class="education__field">Field: Software Engineering</p>
+              <p class="education__note">
+                Foundation in software engineering principles, systems design, and modern
+                development practices — applied through real-world, full-stack projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">06</span>
+          <h2 class="section__title">Let's Build Something</h2>
+        </div>
+        <div class="contact reveal">
+          <div class="contact__text">
+            <p class="contact__lead">
+              Open to opportunities, collaborations, and conversations with recruiters, clients,
+              and fellow builders. Let's create something impactful together.
+            </p>
+            <div class="contact__actions">
+              <a href="mailto:hello@bricemunji.dev" class="btn btn--primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                Email Me
+              </a>
+              <a href="#hero" class="btn btn--ghost">Back to Top</a>
+            </div>
+          </div>
+          <div class="contact__links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span>GitHub</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span>LinkedIn</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+            <a href="mailto:hello@bricemunji.dev" class="contact__link">
+              <span>Email</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Brice Munji<span class="accent">.</span></span>
+      <p class="footer__note">Software Engineer · Frontend Developer · AI &amp; Product Builder — Douala, Cameroon</p>
+      <span class="footer__copy">© <span id="year"></span> Brice Munji. Crafted with care.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
