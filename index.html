@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Brice Munji — Software Engineer, Frontend Developer, and AI & Product Builder based in Douala, Cameroon. Building modern, user-focused digital platforms." />
+  <meta name="description" content="Brice Munji — Software Engineer, Frontend Developer, AI & Product Builder, and COO at CodingHQ, based in Douala, Cameroon." />
   <meta name="author" content="Brice Munji" />
-  <meta property="og:title" content="Brice Munji — Software Engineer & AI Product Builder" />
-  <meta property="og:description" content="Frontend Developer and AI & Product Builder crafting elegant, scalable web applications." />
+  <meta property="og:title" content="Brice Munji — Software Engineer, AI Product Builder & COO" />
+  <meta property="og:description" content="Frontend Developer, AI & Product Builder, and Chief Operating Officer at CodingHQ." />
   <meta property="og:type" content="website" />
-  <title>Brice Munji — Software Engineer &amp; AI Product Builder</title>
+  <title data-i18n="meta.title">Brice Munji — Software Engineer, AI Product Builder &amp; COO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -27,16 +27,26 @@
         <span class="nav__brand-text">Brice<span class="accent">.</span></span>
       </a>
       <nav class="nav__links" id="navLinks">
-        <a href="#about" class="nav__link">About</a>
-        <a href="#skills" class="nav__link">Skills</a>
-        <a href="#projects" class="nav__link">Projects</a>
-        <a href="#community" class="nav__link">Community</a>
-        <a href="#education" class="nav__link">Education</a>
-        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
+        <a href="#community" class="nav__link" data-i18n="nav.community">Community</a>
+        <a href="#education" class="nav__link" data-i18n="nav.education">Education</a>
+        <a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a>
+        <div class="lang-toggle lang-toggle--mobile" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        </div>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__actions">
+        <div class="lang-toggle lang-toggle--desktop" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -48,36 +58,36 @@
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__grid" aria-hidden="true"></div>
       <div class="container hero__inner">
-        <p class="hero__eyebrow reveal"><span class="dot"></span> Available for new projects &amp; collaborations</p>
-        <h1 class="hero__title reveal">
-          Brice Munji
-        </h1>
+        <p class="hero__eyebrow reveal"><span class="dot"></span> <span data-i18n="hero.eyebrow">Available for new projects &amp; collaborations</span></p>
+        <h1 class="hero__title reveal">Brice Munji</h1>
         <p class="hero__roles reveal">
-          <span>Software Engineer</span>
+          <span data-i18n="role.se">Software Engineer</span>
           <span class="sep">/</span>
-          <span>Frontend Developer</span>
+          <span data-i18n="role.fe">Frontend Developer</span>
           <span class="sep">/</span>
-          <span>AI &amp; Product Builder</span>
+          <span data-i18n="role.ai">AI &amp; Product Builder</span>
+          <span class="sep">/</span>
+          <span data-i18n="role.coo">COO at CodingHQ</span>
         </p>
-        <p class="hero__summary reveal">
-          I turn ideas into practical, user-focused products — from educational management systems
-          to intelligent, AI-powered financial tools. Passionate about clean interfaces,
-          scalable architecture, and building things that matter.
+        <p class="hero__summary reveal" data-i18n="hero.summary">
+          I turn ideas into practical, user-focused products — from AI-powered financial tools to
+          full-scale management systems. As COO at CodingHQ, I also lead operations and help build
+          the developer ecosystem across Cameroon.
         </p>
         <div class="hero__meta reveal">
           <span class="hero__location">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            Douala, Cameroon
+            <span data-i18n="hero.location">Douala, Cameroon</span>
           </span>
         </div>
         <div class="hero__actions reveal">
-          <a href="#projects" class="btn btn--primary">View Projects</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          <a href="#projects" class="btn btn--primary" data-i18n="hero.viewProjects">View Projects</a>
+          <a href="#contact" class="btn btn--ghost" data-i18n="hero.getInTouch">Get in Touch</a>
         </div>
       </div>
       <a href="#about" class="hero__scroll" aria-label="Scroll to about">
         <span class="hero__scroll-line"></span>
-        <span>Scroll</span>
+        <span data-i18n="hero.scroll">Scroll</span>
       </a>
     </section>
 
@@ -86,58 +96,62 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="section__index">01</span>
-          <h2 class="section__title">About</h2>
+          <h2 class="section__title" data-i18n="about.title">About</h2>
         </div>
         <div class="about">
           <figure class="about__photo reveal">
             <div class="about__photo-frame">
-              <img src="assets/brice.jpeg" alt="Portrait of Brice Munji, Software Engineer" loading="lazy" />
+              <img src="assets/brice.jpeg" alt="Portrait of Brice Munji, Software Engineer and COO" loading="lazy" />
               <span class="about__photo-badge">
-                <span class="about__photo-dot"></span> Douala, Cameroon
+                <span class="about__photo-dot"></span> <span data-i18n="hero.location">Douala, Cameroon</span>
               </span>
             </div>
             <figcaption class="about__photo-cap">Brice Munji<span class="accent">.</span></figcaption>
           </figure>
           <div class="about__text reveal">
-            <p class="about__lead">
-              Passionate and self-driven Software Engineer with strong interests in frontend
-              development, UI/UX design, scalable web applications, and AI-powered products.
+            <p class="about__lead" data-i18n="about.lead">
+              Passionate and self-driven Software Engineer building modern web applications,
+              AI-powered products, and scalable digital solutions.
             </p>
-            <p>
-              I'm experienced in building modern digital platforms ranging from educational
-              management systems to intelligent financial analysis tools. I enjoy turning ideas
-              into practical, user-focused solutions and continuously learning new technologies
-              to improve my craft.
+            <p data-i18n="about.p1">
+              I specialize in frontend development, UI/UX design, and product development —
+              creating technology that solves real-world problems with clean interfaces and
+              solid architecture.
             </p>
-            <p class="about__objective">
-              <strong>Career Objective —</strong> To grow into a world-class software engineer and
-              product creator, building impactful digital platforms that solve real problems and
-              contribute to technological advancement in Africa and beyond.
+            <p data-i18n="about.p2">
+              Beyond engineering, I'm a technology leader and community builder. As Chief Operating
+              Officer (COO) at CodingHQ, I contribute to organizational growth, operations, project
+              coordination, and initiatives that strengthen the developer ecosystem in Cameroon.
+            </p>
+            <p class="about__objective" data-i18n="about.objective">
+              <strong>Career Objective —</strong> To become a world-class software engineer and
+              technology leader, building impactful digital products, leading innovative teams, and
+              creating solutions that advance technology in Africa and beyond.
             </p>
           </div>
           <aside class="about__side reveal">
             <div class="stat-card">
               <span class="stat-card__num">4+</span>
-              <span class="stat-card__label">Full-stack platforms built</span>
+              <span class="stat-card__label" data-i18n="stat.platforms">Full-stack platforms built</span>
             </div>
             <div class="stat-card">
-              <span class="stat-card__num">AI</span>
-              <span class="stat-card__label">Product integration &amp; delivery</span>
+              <span class="stat-card__num">COO</span>
+              <span class="stat-card__label" data-i18n="stat.leadership">Operations &amp; team leadership</span>
             </div>
             <div class="stat-card">
               <span class="stat-card__num">∞</span>
-              <span class="stat-card__label">Curiosity &amp; continuous learning</span>
+              <span class="stat-card__label" data-i18n="stat.curiosity">Curiosity &amp; continuous learning</span>
             </div>
             <div class="about__interests">
-              <h3>Interests</h3>
+              <h3 data-i18n="about.interests">Interests</h3>
               <div class="chips">
-                <span class="chip">Frontend Development</span>
-                <span class="chip">Artificial Intelligence</span>
-                <span class="chip">Product Design</span>
-                <span class="chip">Gaming</span>
-                <span class="chip">Basketball</span>
-                <span class="chip">Music</span>
-                <span class="chip">Fitness</span>
+                <span class="chip" data-i18n="interest.ai">Artificial Intelligence</span>
+                <span class="chip" data-i18n="interest.frontend">Frontend Development</span>
+                <span class="chip" data-i18n="interest.product">Product Design</span>
+                <span class="chip" data-i18n="interest.gaming">Gaming</span>
+                <span class="chip" data-i18n="interest.basketball">Basketball</span>
+                <span class="chip" data-i18n="interest.music">Music</span>
+                <span class="chip" data-i18n="interest.fitness">Fitness</span>
               </div>
             </div>
           </aside>
@@ -150,11 +164,11 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="section__index">02</span>
-          <h2 class="section__title">Skills &amp; Toolkit</h2>
+          <h2 class="section__title" data-i18n="skills.title">Skills &amp; Toolkit</h2>
         </div>
         <div class="skills">
           <div class="skill-group reveal">
-            <h3 class="skill-group__title"><span class="accent">/</span> Frontend</h3>
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.frontend">Frontend</span></h3>
             <div class="chips">
               <span class="chip">HTML</span>
               <span class="chip">CSS</span>
@@ -166,14 +180,14 @@
             </div>
           </div>
           <div class="skill-group reveal">
-            <h3 class="skill-group__title"><span class="accent">/</span> Backend</h3>
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.backend">Backend</span></h3>
             <div class="chips">
               <span class="chip">Node.js</span>
               <span class="chip">REST APIs</span>
             </div>
           </div>
           <div class="skill-group reveal">
-            <h3 class="skill-group__title"><span class="accent">/</span> Database</h3>
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.database">Database</span></h3>
             <div class="chips">
               <span class="chip">PostgreSQL</span>
               <span class="chip">Supabase</span>
@@ -181,7 +195,7 @@
             </div>
           </div>
           <div class="skill-group reveal">
-            <h3 class="skill-group__title"><span class="accent">/</span> Tools &amp; Technologies</h3>
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.tools">Tools &amp; Technologies</span></h3>
             <div class="chips">
               <span class="chip">Git</span>
               <span class="chip">GitHub</span>
@@ -190,12 +204,15 @@
             </div>
           </div>
           <div class="skill-group reveal skill-group--wide">
-            <h3 class="skill-group__title"><span class="accent">/</span> Other</h3>
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.other">Other</span></h3>
             <div class="chips">
-              <span class="chip">UI/UX Design</span>
-              <span class="chip">Authentication Systems</span>
-              <span class="chip">Role-Based Access Control</span>
-              <span class="chip">AI Product Integration</span>
+              <span class="chip" data-i18n="skill.uiux">UI/UX Design</span>
+              <span class="chip" data-i18n="skill.auth">Authentication Systems</span>
+              <span class="chip" data-i18n="skill.rbac">Role-Based Access Control</span>
+              <span class="chip" data-i18n="skill.aiint">AI Product Integration</span>
+              <span class="chip" data-i18n="skill.proddev">Product Development</span>
+              <span class="chip" data-i18n="skill.teamlead">Team Leadership</span>
+              <span class="chip" data-i18n="skill.projcoord">Project Coordination</span>
             </div>
           </div>
         </div>
@@ -207,23 +224,23 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="section__index">03</span>
-          <h2 class="section__title">Selected Projects</h2>
+          <h2 class="section__title" data-i18n="projects.title">Selected Projects</h2>
         </div>
         <div class="projects">
           <!-- 1 -->
           <article class="project reveal">
             <div class="project__top">
               <span class="project__num">01</span>
-              <span class="project__tag">AI · FinTech</span>
+              <span class="project__tag" data-i18n="p1.tag">AI · FinTech</span>
             </div>
-            <h3 class="project__title">4RexVision</h3>
-            <p class="project__desc">
-              An AI-powered forex chart analysis platform that analyzes trading screenshots,
+            <h3 class="project__title">4RexVision AI</h3>
+            <p class="project__desc" data-i18n="p1.desc">
+              An AI-powered forex analysis platform that analyzes trading chart screenshots,
               provides market insights, supports trading journals, and integrates financial news
-              into one intelligent workspace.
+              to help traders make better decisions.
             </p>
             <ul class="project__stack">
-              <li>AI Analysis</li><li>Market Insights</li><li>Trading Journal</li><li>News Feed</li>
+              <li data-i18n="p1.s1">AI Analysis</li><li data-i18n="p1.s2">Market Insights</li><li data-i18n="p1.s3">Trading Journal</li><li data-i18n="p1.s4">News Feed</li>
             </ul>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
@@ -233,15 +250,15 @@
           <article class="project reveal">
             <div class="project__top">
               <span class="project__num">02</span>
-              <span class="project__tag">Networking · Careers</span>
+              <span class="project__tag" data-i18n="p2.tag">Networking · Careers</span>
             </div>
             <h3 class="project__title">Campus2Career Cameroon</h3>
-            <p class="project__desc">
-              A professional networking and career platform connecting students with companies and
-              opportunities across Cameroon — bridging the gap between education and employment.
+            <p class="project__desc" data-i18n="p2.desc">
+              A professional networking platform designed to connect students with companies,
+              opportunities, and career growth pathways across Cameroon.
             </p>
             <ul class="project__stack">
-              <li>Networking</li><li>Opportunities</li><li>Profiles</li><li>Matching</li>
+              <li data-i18n="p2.s1">Networking</li><li data-i18n="p2.s2">Opportunities</li><li data-i18n="p2.s3">Profiles</li><li data-i18n="p2.s4">Matching</li>
             </ul>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
@@ -251,15 +268,16 @@
           <article class="project reveal">
             <div class="project__top">
               <span class="project__num">03</span>
-              <span class="project__tag">Full-stack · EdTech</span>
+              <span class="project__tag" data-i18n="p3.tag">Full-stack · EdTech</span>
             </div>
             <h3 class="project__title">University Management System</h3>
-            <p class="project__desc">
+            <p class="project__desc" data-i18n="p3.desc">
               A full-stack academic management platform with role-based access for administrators,
-              teachers, parents, and students — streamlining the entire university workflow.
+              teachers, parents, and students — including academic records, grading, attendance,
+              and reporting.
             </p>
             <ul class="project__stack">
-              <li>RBAC</li><li>Admin Panel</li><li>Records</li><li>Dashboards</li>
+              <li>RBAC</li><li data-i18n="p3.s2">Admin Panel</li><li data-i18n="p3.s3">Records</li><li data-i18n="p3.s4">Dashboards</li>
             </ul>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
@@ -269,15 +287,15 @@
           <article class="project reveal">
             <div class="project__top">
               <span class="project__num">04</span>
-              <span class="project__tag">Full-stack · EdTech</span>
+              <span class="project__tag" data-i18n="p4.tag">Full-stack · EdTech</span>
             </div>
             <h3 class="project__title">Primary School Management System</h3>
-            <p class="project__desc">
-              A school administration system handling student registration, grading, attendance,
-              rankings, and automated report card generation — built for everyday school operations.
+            <p class="project__desc" data-i18n="p4.desc">
+              A school administration platform for managing student registration, marks, averages,
+              rankings, attendance, and report cards.
             </p>
             <ul class="project__stack">
-              <li>Registration</li><li>Grading</li><li>Attendance</li><li>Report Cards</li>
+              <li data-i18n="p4.s1">Registration</li><li data-i18n="p4.s2">Marks</li><li data-i18n="p4.s3">Rankings</li><li data-i18n="p4.s4">Report Cards</li>
             </ul>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
@@ -292,19 +310,29 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="section__index">04</span>
-          <h2 class="section__title">Leadership &amp; Community</h2>
+          <h2 class="section__title" data-i18n="community.title">Leadership &amp; Community</h2>
         </div>
         <div class="community reveal">
           <div class="community__badge">
             <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <div class="community__body">
-            <h3>Active contributor at <span class="accent">CodingHQ</span></h3>
-            <p>
-              I participate in collaborative technology projects, developer programs, and
-              community-driven initiatives — sharing knowledge, building together, and growing
-              alongside a community of passionate builders.
+            <span class="community__role" data-i18n="community.rolelabel">Chief Operating Officer (COO)</span>
+            <h3 data-i18n="community.role">Chief Operating Officer (COO) — <span class="accent">CodingHQ</span></h3>
+            <p data-i18n="community.body">
+              As COO at CodingHQ, I contribute to the strategic growth, operations, and execution of
+              technology initiatives — coordinating teams, supporting organizational planning, and
+              building a stronger technology ecosystem through innovation, education, and community
+              development.
             </p>
+            <h4 class="community__subtitle" data-i18n="community.respTitle">Key responsibilities</h4>
+            <ul class="community__list">
+              <li data-i18n="community.r1">Coordinating teams and departments to improve operational efficiency.</li>
+              <li data-i18n="community.r2">Supporting organizational planning and execution of technology programs.</li>
+              <li data-i18n="community.r3">Managing collaboration between developers, designers, and partners.</li>
+              <li data-i18n="community.r4">Contributing to initiatives such as CodeConnect, Campus Tour, and Bootcamp programs.</li>
+              <li data-i18n="community.r5">Building a stronger technology ecosystem through innovation, education, and community.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -315,16 +343,16 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="section__index">05</span>
-          <h2 class="section__title">Education</h2>
+          <h2 class="section__title" data-i18n="education.title">Education</h2>
         </div>
         <div class="education reveal">
           <div class="education__line" aria-hidden="true"></div>
           <div class="education__item">
             <span class="education__dot"></span>
             <div class="education__content">
-              <h3>Bachelor's Degree in Technology (B.Tech)</h3>
-              <p class="education__field">Field: Software Engineering</p>
-              <p class="education__note">
+              <h3 data-i18n="edu.degree">Bachelor's Degree in Technology (B.Tech)</h3>
+              <p class="education__field" data-i18n="edu.field">Field: Software Engineering</p>
+              <p class="education__note" data-i18n="edu.note">
                 Foundation in software engineering principles, systems design, and modern
                 development practices — applied through real-world, full-stack projects.
               </p>
@@ -339,20 +367,20 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="section__index">06</span>
-          <h2 class="section__title">Let's Build Something</h2>
+          <h2 class="section__title" data-i18n="contact.title">Let's Build Something</h2>
         </div>
         <div class="contact reveal">
           <div class="contact__text">
-            <p class="contact__lead">
+            <p class="contact__lead" data-i18n="contact.lead">
               Open to opportunities, collaborations, and conversations with recruiters, clients,
-              and fellow builders. Let's create something impactful together.
+              investors, and technology partners. Let's create something impactful together.
             </p>
             <div class="contact__actions">
               <a href="mailto:hello@bricemunji.dev" class="btn btn--primary">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-                Email Me
+                <span data-i18n="contact.email">Email Me</span>
               </a>
-              <a href="#hero" class="btn btn--ghost">Back to Top</a>
+              <a href="#hero" class="btn btn--ghost" data-i18n="contact.top">Back to Top</a>
             </div>
           </div>
           <div class="contact__links">
@@ -365,7 +393,7 @@
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
             </a>
             <a href="mailto:hello@bricemunji.dev" class="contact__link">
-              <span>Email</span>
+              <span data-i18n="link.email">Email</span>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
             </a>
           </div>
@@ -377,8 +405,8 @@
   <footer class="footer">
     <div class="container footer__inner">
       <span class="footer__brand">Brice Munji<span class="accent">.</span></span>
-      <p class="footer__note">Software Engineer · Frontend Developer · AI &amp; Product Builder — Douala, Cameroon</p>
-      <span class="footer__copy">© <span id="year"></span> Brice Munji. Crafted with care.</span>
+      <p class="footer__note" data-i18n="footer.note">Software Engineer · Frontend Developer · AI &amp; Product Builder · COO at CodingHQ — Douala, Cameroon</p>
+      <span class="footer__copy">© <span id="year"></span> Brice Munji. <span data-i18n="footer.copy">Crafted with care.</span></span>
     </div>
   </footer>
 
