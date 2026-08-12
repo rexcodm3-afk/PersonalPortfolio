@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brice Munji — Software Engineer, Frontend Developer, AI & Product Builder, and COO at CodingHQ, based in Douala, Cameroon." />
+  <meta name="author" content="Brice Munji" />
+  <meta property="og:title" content="Brice Munji — Software Engineer, AI Product Builder & COO" />
+  <meta property="og:description" content="Frontend Developer, AI & Product Builder, and Chief Operating Officer at CodingHQ." />
+  <meta property="og:type" content="website" />
+  <title data-i18n="meta.title">Brice Munji — Software Engineer, AI Product Builder &amp; COO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Space Grotesk, sans-serif' font-size='56' font-weight='700' fill='%23e11d2a' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__brand-mark">B</span>
+        <span class="nav__brand-text">Brice<span class="accent">.</span></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
+        <a href="#community" class="nav__link" data-i18n="nav.community">Community</a>
+        <a href="#education" class="nav__link" data-i18n="nav.education">Education</a>
+        <a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a>
+        <div class="lang-toggle lang-toggle--mobile" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        </div>
+      </nav>
+      <div class="nav__actions">
+        <div class="lang-toggle lang-toggle--desktop" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal"><span class="dot"></span> <span data-i18n="hero.eyebrow">Available for new projects &amp; collaborations</span></p>
+        <h1 class="hero__title reveal">Brice Munji</h1>
+        <p class="hero__roles reveal">
+          <span data-i18n="role.se">Software Engineer</span>
+          <span class="sep">/</span>
+          <span data-i18n="role.fe">Frontend Developer</span>
+          <span class="sep">/</span>
+          <span data-i18n="role.ai">AI &amp; Product Builder</span>
+          <span class="sep">/</span>
+          <span data-i18n="role.coo">COO at CodingHQ</span>
+        </p>
+        <p class="hero__summary reveal" data-i18n="hero.summary">
+          I turn ideas into practical, user-focused products — from AI-powered financial tools to
+          full-scale management systems. As COO at CodingHQ, I also lead operations and help build
+          the developer ecosystem across Cameroon.
+        </p>
+        <div class="hero__meta reveal">
+          <span class="hero__location">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="hero.location">Douala, Cameroon</span>
+          </span>
+        </div>
+        <div class="hero__actions reveal">
+          <a href="assets/Brice_Munji_Resume.pdf" download class="btn btn--primary" data-i18n="hero.downloadResume">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn--ghost" data-i18n="hero.viewProjects">View Projects</a>
+          <a href="#contact" class="btn btn--ghost" data-i18n="hero.getInTouch">Get in Touch</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span class="hero__scroll-line"></span>
+        <span data-i18n="hero.scroll">Scroll</span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title" data-i18n="about.title">About</h2>
+        </div>
+        <div class="about">
+          <figure class="about__photo reveal">
+            <div class="about__photo-frame">
+              <img src="assets/brice.jpeg" alt="Portrait of Brice Munji, Software Engineer and COO" loading="lazy" />
+              <span class="about__photo-badge">
+                <span class="about__photo-dot"></span> <span data-i18n="hero.location">Douala, Cameroon</span>
+              </span>
+            </div>
+            <figcaption class="about__photo-cap">Brice Munji<span class="accent">.</span></figcaption>
+          </figure>
+          <div class="about__text reveal">
+            <p class="about__lead" data-i18n="about.lead">
+              Passionate and self-driven Software Engineer building modern web applications,
+              AI-powered products, and scalable digital solutions.
+            </p>
+            <p data-i18n="about.p1">
+              I specialize in frontend development, UI/UX design, and product development —
+              creating technology that solves real-world problems with clean interfaces and
+              solid architecture.
+            </p>
+            <p data-i18n="about.p2">
+              Beyond engineering, I'm a technology leader and community builder. As Chief Operating
+              Officer (COO) at CodingHQ, I contribute to organizational growth, operations, project
+              coordination, and initiatives that strengthen the developer ecosystem in Cameroon.
+            </p>
+            <p class="about__objective" data-i18n="about.objective">
+              <strong>Career Objective —</strong> To become a world-class software engineer and
+              technology leader, building impactful digital products, leading innovative teams, and
+              creating solutions that advance technology in Africa and beyond.
+            </p>
+          </div>
+          <aside class="about__side reveal">
+            <div class="stat-card">
+              <span class="stat-card__num">4+</span>
+              <span class="stat-card__label" data-i18n="stat.platforms">Full-stack platforms built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">COO</span>
+              <span class="stat-card__label" data-i18n="stat.leadership">Operations &amp; team leadership</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">∞</span>
+              <span class="stat-card__label" data-i18n="stat.curiosity">Curiosity &amp; continuous learning</span>
+            </div>
+            <div class="about__interests">
+              <h3 data-i18n="about.interests">Interests</h3>
+              <div class="chips">
+                <span class="chip" data-i18n="interest.ai">Artificial Intelligence</span>
+                <span class="chip" data-i18n="interest.frontend">Frontend Development</span>
+                <span class="chip" data-i18n="interest.product">Product Design</span>
+                <span class="chip" data-i18n="interest.gaming">Gaming</span>
+                <span class="chip" data-i18n="interest.basketball">Basketball</span>
+                <span class="chip" data-i18n="interest.music">Music</span>
+                <span class="chip" data-i18n="interest.fitness">Fitness</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title" data-i18n="skills.title">Skills &amp; Toolkit</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.frontend">Frontend</span></h3>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Next.js</span>
+              <span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.backend">Backend</span></h3>
+            <div class="chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.database">Database</span></h3>
+            <div class="chips">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">SQLite</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.tools">Tools &amp; Technologies</span></h3>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Prisma</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+          <div class="skill-group reveal skill-group--wide">
+            <h3 class="skill-group__title"><span class="accent">/</span> <span data-i18n="group.other">Other</span></h3>
+            <div class="chips">
+              <span class="chip" data-i18n="skill.uiux">UI/UX Design</span>
+              <span class="chip" data-i18n="skill.auth">Authentication Systems</span>
+              <span class="chip" data-i18n="skill.rbac">Role-Based Access Control</span>
+              <span class="chip" data-i18n="skill.aiint">AI Product Integration</span>
+              <span class="chip" data-i18n="skill.proddev">Product Development</span>
+              <span class="chip" data-i18n="skill.teamlead">Team Leadership</span>
+              <span class="chip" data-i18n="skill.projcoord">Project Coordination</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title" data-i18n="projects.title">Selected Projects</h2>
+        </div>
+        <div class="projects">
+          <!-- 1 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">01</span>
+              <span class="project__tag" data-i18n="p1.tag">AI · FinTech</span>
+            </div>
+            <h3 class="project__title">4RexVision AI</h3>
+            <p class="project__desc" data-i18n="p1.desc">
+              An AI-powered forex analysis platform that analyzes trading chart screenshots,
+              provides market insights, supports trading journals, and integrates financial news
+              to help traders make better decisions.
+            </p>
+            <ul class="project__stack">
+              <li data-i18n="p1.s1">AI Analysis</li><li data-i18n="p1.s2">Market Insights</li><li data-i18n="p1.s3">Trading Journal</li><li data-i18n="p1.s4">News Feed</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+          <!-- 2 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">02</span>
+              <span class="project__tag" data-i18n="p2.tag">Networking · Careers</span>
+            </div>
+            <h3 class="project__title">Campus2Career Cameroon</h3>
+            <p class="project__desc" data-i18n="p2.desc">
+              A professional networking platform designed to connect students with companies,
+              opportunities, and career growth pathways across Cameroon.
+            </p>
+            <ul class="project__stack">
+              <li data-i18n="p2.s1">Networking</li><li data-i18n="p2.s2">Opportunities</li><li data-i18n="p2.s3">Profiles</li><li data-i18n="p2.s4">Matching</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+          <!-- 3 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">03</span>
+              <span class="project__tag" data-i18n="p3.tag">Full-stack · EdTech</span>
+            </div>
+            <h3 class="project__title">University Management System</h3>
+            <p class="project__desc" data-i18n="p3.desc">
+              A full-stack academic management platform with role-based access for administrators,
+              teachers, parents, and students — including academic records, grading, attendance,
+              and reporting.
+            </p>
+            <ul class="project__stack">
+              <li>RBAC</li><li data-i18n="p3.s2">Admin Panel</li><li data-i18n="p3.s3">Records</li><li data-i18n="p3.s4">Dashboards</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+          <!-- 4 -->
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__num">04</span>
+              <span class="project__tag" data-i18n="p4.tag">Full-stack · EdTech</span>
+            </div>
+            <h3 class="project__title">Primary School Management System</h3>
+            <p class="project__desc" data-i18n="p4.desc">
+              A school administration platform for managing student registration, marks, averages,
+              rankings, attendance, and report cards.
+            </p>
+            <ul class="project__stack">
+              <li data-i18n="p4.s1">Registration</li><li data-i18n="p4.s2">Marks</li><li data-i18n="p4.s3">Rankings</li><li data-i18n="p4.s4">Report Cards</li>
+            </ul>
+            <span class="project__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="section section--alt" id="community">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title" data-i18n="community.title">Leadership &amp; Community</h2>
+        </div>
+        <div class="community reveal">
+          <div class="community__badge">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="community__body">
+            <span class="community__role" data-i18n="community.rolelabel">Chief Operating Officer (COO)</span>
+            <h3 data-i18n="community.role">Chief Operating Officer (COO) — <span class="accent">CodingHQ</span></h3>
+            <p data-i18n="community.body">
+              As COO at CodingHQ, I contribute to the strategic growth, operations, and execution of
+              technology initiatives — coordinating teams, supporting organizational planning, and
+              building a stronger technology ecosystem through innovation, education, and community
+              development.
+            </p>
+            <h4 class="community__subtitle" data-i18n="community.respTitle">Key responsibilities</h4>
+            <ul class="community__list">
+              <li data-i18n="community.r1">Coordinating teams and departments to improve operational efficiency.</li>
+              <li data-i18n="community.r2">Supporting organizational planning and execution of technology programs.</li>
+              <li data-i18n="community.r3">Managing collaboration between developers, designers, and partners.</li>
+              <li data-i18n="community.r4">Contributing to initiatives such as CodeConnect, Campus Tour, and Bootcamp programs.</li>
+              <li data-i18n="community.r5">Building a stronger technology ecosystem through innovation, education, and community.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">05</span>
+          <h2 class="section__title" data-i18n="education.title">Education</h2>
+        </div>
+        <div class="education reveal">
+          <div class="education__line" aria-hidden="true"></div>
+
+          <div class="education__item">
+            <span class="education__dot"></span>
+            <div class="education__content">
+              <span class="education__level" data-i18n="edu.level4">University</span>
+              <h3 data-i18n="edu.degree">Bachelor's Degree in Technology (B.Tech)</h3>
+              <p class="education__field" data-i18n="edu.field">Software Engineering</p>
+              <p class="education__note" data-i18n="edu.note">
+                Advanced studies in software engineering, systems architecture, and modern
+                development practices — applied through full-stack projects and industry-relevant solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="education__item">
+            <span class="education__dot"></span>
+            <div class="education__content">
+              <span class="education__level" data-i18n="edu.level3">University</span>
+              <h3 data-i18n="edu.hnd">Higher National Diploma (HND)</h3>
+              <p class="education__field" data-i18n="edu.field">Software Engineering</p>
+              <p class="education__note" data-i18n="edu.hndNote">
+                Hands-on diploma focused on practical software development, database management,
+                web technologies, and professional engineering practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="education__item">
+            <span class="education__dot"></span>
+            <div class="education__content">
+              <span class="education__level" data-i18n="edu.level2">Secondary School</span>
+              <h3 data-i18n="edu.alevel">GCE Advanced Level (A-Level)</h3>
+              <p class="education__field" data-i18n="edu.alevelField">Science &amp; Technology</p>
+              <p class="education__note" data-i18n="edu.alevelNote">
+                Advanced secondary education with a focus on scientific and technical subjects,
+                building the foundation for higher education in software engineering.
+              </p>
+            </div>
+          </div>
+
+          <div class="education__item">
+            <span class="education__dot"></span>
+            <div class="education__content">
+              <span class="education__level" data-i18n="edu.level1">Secondary School</span>
+              <h3 data-i18n="edu.olevel">GCE Ordinary Level (O-Level)</h3>
+              <p class="education__field" data-i18n="edu.olevelField">General Education</p>
+              <p class="education__note" data-i18n="edu.olevelNote">
+                Completed secondary education with a broad academic foundation, developing
+                core competencies in sciences, mathematics, and general studies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">06</span>
+          <h2 class="section__title" data-i18n="contact.title">Let's Build Something</h2>
+        </div>
+        <div class="contact reveal">
+          <div class="contact__text">
+            <p class="contact__lead" data-i18n="contact.lead">
+              Open to opportunities, collaborations, and conversations with recruiters, clients,
+              investors, and technology partners. Let's create something impactful together.
+            </p>
+            <div class="contact__actions">
+              <a href="mailto:hello@bricemunji.dev" class="btn btn--primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <span data-i18n="contact.email">Email Me</span>
+              </a>
+              <a href="#hero" class="btn btn--ghost" data-i18n="contact.top">Back to Top</a>
+            </div>
+          </div>
+          <div class="contact__links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span>GitHub</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span>LinkedIn</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+            <a href="mailto:hello@bricemunji.dev" class="contact__link">
+              <span data-i18n="link.email">Email</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Brice Munji<span class="accent">.</span></span>
+      <p class="footer__note" data-i18n="footer.note">Software Engineer · Frontend Developer · AI &amp; Product Builder · COO at CodingHQ — Douala, Cameroon</p>
+      <span class="footer__copy">© <span id="year"></span> Brice Munji. <span data-i18n="footer.copy">Crafted with care.</span></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
